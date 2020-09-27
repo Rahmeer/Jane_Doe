@@ -1,181 +1,203 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 body {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family:Montserrat, sans-serif;
-
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+  border: 0.1px solid transparent;
 }
 
 .containter {
-    display: flex;
-    flex-wrap: wrap;
+  /* display: flex;
+  flex-wrap: wrap; */
 }
 
 .left {
-    flex: 1;
-
+  /* flex: 1; */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 40%;
+}
+.left .left-bg-img {
+  background: url(./7.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .left img {
-    max-height: 100vh;
-    /* position: fixed; */
+  max-height: 100vh;
+  /* position: fixed; */
 }
 
 .right {
-    width: 100%;
-    flex: 1.5;
+  margin-left: 40%;
+  /* width: 100%; */
+  /* flex: 1.5; */
+}
+.right-content {
+  margin: 0 20px;
 }
 
 .first {
-    justify-content: center;
-    text-align: center;
+  /* justify-content: center;
+  text-align: center; */
+  border: 1px solid red;
+  text-align: center;
+  padding: 128px 16px;
 }
 
-.first p {
-    text-align: center;
-    font-weight: lighter;
-    font-size: 5em;
-    margin-bottom: 0;
+.first h1 {
+  font-size: 64px;
+  font-weight: bold;
+  /* text-align: center;
+  font-weight: lighter;
+  font-size: 5em;
+  margin-bottom: 0; */
 }
 
 button {
-    margin: 10px;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
+  margin: 10px;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
 }
 
 .Portfolio {
-    /* width: 100%; */
-
+  /* width: 100%; */
 }
 
 .Portfolio .port {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
-    align-items: flex-start; 
-
+  border: 1px solid red;
+  overflow: hidden;
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-between; */
+  /* align-items: flex-start; */
 }
-
+.port-left {
+  flex: 1;
+}
+.port-right {
+  flex: 1;
+}
+.port img{
+    width: 100%;
+}
 .Portfolio .ports {
-    width: 40%;    
-    /* border: 5px solid rgb(32, 159, 217); */
-
+  width: 40%;
+  /* border: 5px solid rgb(32, 159, 217); */
 }
 
 .Portfolio .ports img {
-    width: 100%;     margin: 0;
-
-
+  width: 100%;
+  margin: 0;
 }
 
-.Reputation {}
+.Reputation {
+}
 
 .item {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .item img {
-    margin-left: 16px;
-    margin-right: 16px;
-    margin-bottom: 10px;
-    width: 80px;
-    border-radius: 50%;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-bottom: 10px;
+  width: 80px;
+  border-radius: 50%;
 }
 
 .item p {
-    justify-content: center;
-    align-items: center;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .Price {
-    width: 100%;
-
+  width: 100%;
 }
 
 .p-pro {
-    display: inline;
-    display: flex;
-    flex-wrap: wrap;
-    box-shadow: lightgray;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
+  display: inline;
+  display: flex;
+  flex-wrap: wrap;
+  box-shadow: lightgray;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .p-left {
-    width: 400px;
-    border: 1px solid black;
-    margin: 10px;
-
+  width: 400px;
+  border: 1px solid black;
+  margin: 10px;
 }
 
 .p-right {
-    border: 1px solid black;
-    width: 400px;
-    margin: 10px;
-
+  border: 1px solid black;
+  width: 400px;
+  margin: 10px;
 }
 
 .pri {
-    border-bottom: 1px solid black;
+  border-bottom: 1px solid black;
 }
 
 .pri h1 {
-    padding: 8px 16px;
-    margin: 0;
-    background-color: rgb(141, 148, 155);
-    color: white;
-
+  padding: 8px 16px;
+  margin: 0;
+  background-color: rgb(141, 148, 155);
+  color: white;
 }
 
 .pro button {
-    margin: 10px;
-    border: none;
-    width: 50%;
-    cursor: pointer;
-    background-color: white;
-
-    
+  margin: 10px;
+  border: none;
+  width: 50%;
+  cursor: pointer;
+  background-color: white;
 }
 
 .p-pro .pro {
-    background-color: rgb(141, 148, 155);
+  background-color: rgb(141, 148, 155);
 }
 
 .p-right .pri h1 {
-    padding: 8px 16px;
-    background-color: black;
-    color: white;
-
+  padding: 8px 16px;
+  background-color: black;
+  color: white;
 }
 
-.map img{
-    width: 100%;
+.map img {
+  width: 100%;
 }
 
-.message{
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
+.message {
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
-.message input{
-    margin: 4px;
-    padding: 10px;
+.message input {
+  margin: 4px;
+  padding: 10px;
 }
 
-.but{
-    width: 20%;
-    margin-left: 0;
+.but {
+  width: 20%;
+  margin-left: 0;
 }
 footer {
-    background-color: rgb(197, 201, 204);
-padding: 10px;
-    text-align: center;
+  background-color: rgb(197, 201, 204);
+  padding: 10px;
+  text-align: center;
 }
