@@ -10,6 +10,9 @@ body {
   border: 0.1px solid transparent;
 }
 
+hr{
+  opacity: 0.30;
+}
 .containter {
   /* display: flex;
   flex-wrap: wrap; */
@@ -48,7 +51,7 @@ body {
 .first {
   /* justify-content: center;
   text-align: center; */
-  border: 1px solid red;
+  /* border: 1px solid red; */
   text-align: center;
   padding: 128px 16px;
 }
@@ -63,14 +66,19 @@ body {
 }
 
 button {
-  margin: 10px;
+  margin: 16px !important;
   border: none;
-  padding: 10px;
+  padding: 12px 24px!important;
   cursor: pointer;
 }
 
-.Portfolio {
+button:hover{
+  background-color: rgb(161, 161, 161);
+}
+
+.Portfolio h1{
   /* width: 100%; */
+  color: #757575 !important;
 }
 
 .Portfolio .port {
@@ -98,9 +106,6 @@ button {
 .Portfolio .ports img {
   width: 100%;
   margin: 0;
-}
-
-.Reputation {
 }
 
 .item {
