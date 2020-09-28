@@ -3,6 +3,7 @@
 *::before {
   box-sizing: border-box;
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -10,22 +11,24 @@ body {
   border: 0.1px solid transparent;
 }
 
-hr{
-  opacity: 0.30;
-}
-.containter {
-  /* display: flex;
-  flex-wrap: wrap; */
+i {
+  color: #757575 ;
 }
 
+hr {
+  opacity: 0.30;
+}
+
+.containter {}
+
 .left {
-  /* flex: 1; */
   position: fixed;
   bottom: 0;
   left: 0;
   height: 100%;
   width: 40%;
 }
+
 .left .left-bg-img {
   background: url(./7.jpg) no-repeat;
   background-position: center;
@@ -36,22 +39,19 @@ hr{
 
 .left img {
   max-height: 100vh;
-  /* position: fixed; */
 }
 
 .right {
   margin-left: 40%;
-  /* width: 100%; */
-  /* flex: 1.5; */
+
 }
+
 .right-content {
   margin: 0 20px;
 }
 
 .first {
-  /* justify-content: center;
-  text-align: center; */
-  /* border: 1px solid red; */
+
   text-align: center;
   padding: 128px 16px;
 }
@@ -59,48 +59,45 @@ hr{
 .first h1 {
   font-size: 64px;
   font-weight: bold;
-  /* text-align: center;
-  font-weight: lighter;
-  font-size: 5em;
-  margin-bottom: 0; */
+
 }
 
 button {
-  margin: 16px !important;
   border: none;
-  padding: 12px 24px!important;
+  padding: 12px 24px ;
   cursor: pointer;
 }
 
-button:hover{
+button:hover {
   background-color: rgb(161, 161, 161);
 }
 
-.Portfolio h1{
-  /* width: 100%; */
-  color: #757575 !important;
+.Portfolio h1 {
+  color: #757575 ;
 }
 
 .Portfolio .port {
-  border: 1px solid red;
   overflow: hidden;
   display: flex;
-  /* flex-wrap: wrap; */
-  /* justify-content: space-between; */
-  /* align-items: flex-start; */
+
 }
+
 .port-left {
   flex: 1;
 }
+
 .port-right {
   flex: 1;
+  margin-left: 7px;
+
 }
-.port img{
-    width: 100%;
+
+.port img {
+  width: 100%;
 }
+
 .Portfolio .ports {
   width: 40%;
-  /* border: 5px solid rgb(32, 159, 217); */
 }
 
 .Portfolio .ports img {
@@ -111,7 +108,6 @@ button:hover{
 .item {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
 }
 
 .item img {
@@ -134,7 +130,6 @@ button:hover{
 .p-pro {
   display: inline;
   display: flex;
-  flex-wrap: wrap;
   box-shadow: lightgray;
   justify-content: center;
   align-items: center;
@@ -187,22 +182,81 @@ button:hover{
 }
 
 .message {
-  margin: 10px;
+  margin: 10px 0;
   display: flex;
   flex-direction: column;
 }
 
 .message input {
+  margin-left: 0;
   margin: 4px;
   padding: 10px;
 }
 
 .but {
-  width: 20%;
-  margin-left: 0;
+  justify-content: center;
+  text-align: start;
+
 }
+
+.but button {
+  font-size: 18px;
+  justify-content: space-around;
+  margin:20px 0;
+
+  margin-bottom: 60px;
+
+}
+
+.Contact{
+  color: #757575;
+  font-size:20px;
+}
+
 footer {
   background-color: rgb(197, 201, 204);
   padding: 10px;
   text-align: center;
+}
+
+.first .none {
+  display: none;
+}
+
+@media all and (max-width:1000px) {
+
+  .right {
+    margin-left: 0;
+  }
+
+  .left .left-bg-img {
+    display: none;
+  }
+
+  .first .none {
+    display: block;
+    overflow: hidden;
+  }
+
+  .first .none img {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media all and (max-width:600px) {
+
+  .port {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .p-pro {
+    display: flex;
+    flex-direction: column;
+
+  }
 }
